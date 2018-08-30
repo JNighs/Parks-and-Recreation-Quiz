@@ -40,7 +40,7 @@ function renderQuestion() {
   //Add in answer choices
   currentQuestion.answers.forEach(function (answer, index) {
     $('.choices').append(`
-            <input type="radio" value="${answer}" ID="${index}" name="answer" aria-labelledby="questionLabel"  role="radio" required>
+            <input type="radio" value="${answer}" ID="${index}" name="answer" required>
             <label for="${index}">${answer}</label>
         `);
   })
